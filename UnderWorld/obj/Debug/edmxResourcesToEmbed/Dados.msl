@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UnderWorldModelStoreContainer" CdmEntityContainer="UnderWorldEntities">
+    <EntitySetMapping Name="album">
+      <EntityTypeMapping TypeName="UnderWorldModel.album">
+        <MappingFragment StoreEntitySet="album">
+          <ScalarProperty Name="lancamento" ColumnName="lancamento" />
+          <ScalarProperty Name="foto_album" ColumnName="foto_album" />
+          <ScalarProperty Name="duracao" ColumnName="duracao" />
+          <ScalarProperty Name="qnt_faixa" ColumnName="qnt_faixa" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="id_artista" ColumnName="id_artista" />
+          <ScalarProperty Name="id_album" ColumnName="id_album" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="artista">
+      <EntityTypeMapping TypeName="UnderWorldModel.artista">
+        <MappingFragment StoreEntitySet="artista">
+          <ScalarProperty Name="foto_artista" ColumnName="foto_artista" />
+          <ScalarProperty Name="nome_artista" ColumnName="nome_artista" />
+          <ScalarProperty Name="id_artista" ColumnName="id_artista" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="musica">
+      <EntityTypeMapping TypeName="UnderWorldModel.musica">
+        <MappingFragment StoreEntitySet="musica">
+          <ScalarProperty Name="audio" ColumnName="audio" />
+          <ScalarProperty Name="duracao" ColumnName="duracao" />
+          <ScalarProperty Name="nome_faixa" ColumnName="nome_faixa" />
+          <ScalarProperty Name="id_artista" ColumnName="id_artista" />
+          <ScalarProperty Name="id_album" ColumnName="id_album" />
+          <ScalarProperty Name="id_musica" ColumnName="id_musica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="playlist">
+      <EntityTypeMapping TypeName="UnderWorldModel.playlist">
+        <MappingFragment StoreEntitySet="playlist">
+          <ScalarProperty Name="remove_bloqueia" ColumnName="remove_bloqueia" />
+          <ScalarProperty Name="bloqueia" ColumnName="bloqueia" />
+          <ScalarProperty Name="remove_curte" ColumnName="remove_curte" />
+          <ScalarProperty Name="curte" ColumnName="curte" />
+          <ScalarProperty Name="id_musica" ColumnName="id_musica" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_playlist" ColumnName="id_playlist" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="relacionado">
+      <EntityTypeMapping TypeName="UnderWorldModel.relacionado">
+        <MappingFragment StoreEntitySet="relacionado">
+          <ScalarProperty Name="id_artista_relacionado" ColumnName="id_artista_relacionado" />
+          <ScalarProperty Name="id_artista" ColumnName="id_artista" />
+          <ScalarProperty Name="id_relacionado" ColumnName="id_relacionado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="seguir">
+      <EntityTypeMapping TypeName="UnderWorldModel.seguir">
+        <MappingFragment StoreEntitySet="seguir">
+          <ScalarProperty Name="remove_bloqueia" ColumnName="remove_bloqueia" />
+          <ScalarProperty Name="bloqueia" ColumnName="bloqueia" />
+          <ScalarProperty Name="remove_segue" ColumnName="remove_segue" />
+          <ScalarProperty Name="segue" ColumnName="segue" />
+          <ScalarProperty Name="id_artista" ColumnName="id_artista" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_seguir" ColumnName="id_seguir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="UnderWorldModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="nome_usuario" ColumnName="nome_usuario" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

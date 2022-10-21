@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="257b75a22c054073919ac031c29d2125" Name="Diagram1">
+        <EntityTypeShape EntityType="UnderWorldModel.album" Width="1.5" PointX="3" PointY="9.375" />
+        <EntityTypeShape EntityType="UnderWorldModel.artista" Width="1.5" PointX="0.75" PointY="4.5" />
+        <EntityTypeShape EntityType="UnderWorldModel.musica" Width="1.5" PointX="5.25" PointY="7" />
+        <EntityTypeShape EntityType="UnderWorldModel.playlist" Width="1.5" PointX="7.5" PointY="7" />
+        <EntityTypeShape EntityType="UnderWorldModel.seguir" Width="1.5" PointX="3" PointY="2.5" />
+        <EntityTypeShape EntityType="UnderWorldModel.usuario" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="UnderWorldModel.relacionado" Width="1.5" PointX="3" PointY="6.625" />
+        <AssociationConnector Association="UnderWorldModel.fk_id_album_id_musica" />
+        <AssociationConnector Association="UnderWorldModel.fk_id_artista_id_album" />
+        <AssociationConnector Association="UnderWorldModel.fk_artista_seguir" />
+        <AssociationConnector Association="UnderWorldModel.fk_id_artista_id_musica" />
+        <AssociationConnector Association="UnderWorldModel.fk_id_artista_relacionado" />
+        <AssociationConnector Association="UnderWorldModel.fk_id_relacionado_artista" />
+        <AssociationConnector Association="UnderWorldModel.fk_musica_playlist" />
+        <AssociationConnector Association="UnderWorldModel.fk_usuario_playlist" />
+        <AssociationConnector Association="UnderWorldModel.fk_usuario_seguir" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UnderWorldModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="album">
+    <Key>
+      <PropertyRef Name="id_album" />
+    </Key>
+    <Property Name="id_album" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_artista" Type="int" Nullable="false" />
+    <Property Name="titulo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="lancamento" Type="date" Nullable="false" />
+    <Property Name="qnt_faixa" Type="int" Nullable="false" />
+    <Property Name="duracao" Type="time" Precision="7" Nullable="false" />
+    <Property Name="foto_album" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="artista">
+    <Key>
+      <PropertyRef Name="id_artista" />
+    </Key>
+    <Property Name="id_artista" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome_artista" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="foto_artista" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="musica">
+    <Key>
+      <PropertyRef Name="id_musica" />
+    </Key>
+    <Property Name="id_musica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_album" Type="int" Nullable="false" />
+    <Property Name="id_artista" Type="int" Nullable="false" />
+    <Property Name="nome_faixa" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="duracao" Type="time" Precision="7" Nullable="false" />
+    <Property Name="audio" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="playlist">
+    <Key>
+      <PropertyRef Name="id_playlist" />
+    </Key>
+    <Property Name="id_playlist" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="id_musica" Type="int" Nullable="false" />
+    <Property Name="curte" Type="bit" Nullable="false" />
+    <Property Name="remove_curti" Type="bit" Nullable="false" />
+    <Property Name="bloqueia" Type="bit" Nullable="false" />
+    <Property Name="remove_bloqueia" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'UnderWorld.dbo.relacionado' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="relacionado">
+    <Key>
+      <PropertyRef Name="id_relacionado" />
+      <PropertyRef Name="id_artista" />
+      <PropertyRef Name="id_artista_relacionado" />
+    </Key>
+    <Property Name="id_relacionado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_artista" Type="int" Nullable="false" />
+    <Property Name="id_artista_relacionado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="seguir">
+    <Key>
+      <PropertyRef Name="id_seguir" />
+    </Key>
+    <Property Name="id_seguir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="id_artista" Type="int" Nullable="false" />
+    <Property Name="SEGUE" Type="bit" Nullable="false" />
+    <Property Name="remove_segue" Type="bit" Nullable="false" />
+    <Property Name="bloqueia" Type="bit" Nullable="false" />
+    <Property Name="remove_bloquiea" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome_usuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="senha" Type="varchar" MaxLength="70" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_artista_seguir">
+    <End Role="artista" Type="Self.artista" Multiplicity="1" />
+    <End Role="seguir" Type="Self.seguir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artista">
+        <PropertyRef Name="id_artista" />
+      </Principal>
+      <Dependent Role="seguir">
+        <PropertyRef Name="id_artista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_id_album_id_musica">
+    <End Role="album" Type="Self.album" Multiplicity="1" />
+    <End Role="musica" Type="Self.musica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="album">
+        <PropertyRef Name="id_album" />
+      </Principal>
+      <Dependent Role="musica">
+        <PropertyRef Name="id_album" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_id_artista_id_album">
+    <End Role="artista" Type="Self.artista" Multiplicity="1" />
+    <End Role="album" Type="Self.album" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artista">
+        <PropertyRef Name="id_artista" />
+      </Principal>
+      <Dependent Role="album">
+        <PropertyRef Name="id_artista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_id_artista_id_musica">
+    <End Role="artista" Type="Self.artista" Multiplicity="1" />
+    <End Role="musica" Type="Self.musica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artista">
+        <PropertyRef Name="id_artista" />
+      </Principal>
+      <Dependent Role="musica">
+        <PropertyRef Name="id_artista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_id_artista_relacionado">
+    <End Role="artista" Type="Self.artista" Multiplicity="1" />
+    <End Role="relacionado" Type="Self.relacionado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artista">
+        <PropertyRef Name="id_artista" />
+      </Principal>
+      <Dependent Role="relacionado">
+        <PropertyRef Name="id_artista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_id_relacionado_artista">
+    <End Role="artista" Type="Self.artista" Multiplicity="1" />
+    <End Role="relacionado" Type="Self.relacionado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artista">
+        <PropertyRef Name="id_artista" />
+      </Principal>
+      <Dependent Role="relacionado">
+        <PropertyRef Name="id_artista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_musica_playlist">
+    <End Role="musica" Type="Self.musica" Multiplicity="1" />
+    <End Role="playlist" Type="Self.playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="musica">
+        <PropertyRef Name="id_musica" />
+      </Principal>
+      <Dependent Role="playlist">
+        <PropertyRef Name="id_musica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuario_playlist">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="playlist" Type="Self.playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="playlist">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuario_seguir">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="seguir" Type="Self.seguir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="seguir">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UnderWorldModelStoreContainer">
+    <EntitySet Name="album" EntityType="Self.album" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="artista" EntityType="Self.artista" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="musica" EntityType="Self.musica" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="playlist" EntityType="Self.playlist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="seguir" EntityType="Self.seguir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="relacionado" EntityType="Self.relacionado" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [relacionado].[id_relacionado] AS [id_relacionado], 
+    [relacionado].[id_artista] AS [id_artista], 
+    [relacionado].[id_artista_relacionado] AS [id_artista_relacionado]
+    FROM [dbo].[relacionado] AS [relacionado]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="fk_artista_seguir" Association="Self.fk_artista_seguir">
+      <End Role="artista" EntitySet="artista" />
+      <End Role="seguir" EntitySet="seguir" />
+    </AssociationSet>
+    <AssociationSet Name="fk_id_album_id_musica" Association="Self.fk_id_album_id_musica">
+      <End Role="album" EntitySet="album" />
+      <End Role="musica" EntitySet="musica" />
+    </AssociationSet>
+    <AssociationSet Name="fk_id_artista_id_album" Association="Self.fk_id_artista_id_album">
+      <End Role="artista" EntitySet="artista" />
+      <End Role="album" EntitySet="album" />
+    </AssociationSet>
+    <AssociationSet Name="fk_id_artista_id_musica" Association="Self.fk_id_artista_id_musica">
+      <End Role="artista" EntitySet="artista" />
+      <End Role="musica" EntitySet="musica" />
+    </AssociationSet>
+    <AssociationSet Name="fk_id_artista_relacionado" Association="Self.fk_id_artista_relacionado">
+      <End Role="artista" EntitySet="artista" />
+      <End Role="relacionado" EntitySet="relacionado" />
+    </AssociationSet>
+    <AssociationSet Name="fk_id_relacionado_artista" Association="Self.fk_id_relacionado_artista">
+      <End Role="artista" EntitySet="artista" />
+      <End Role="relacionado" EntitySet="relacionado" />
+    </AssociationSet>
+    <AssociationSet Name="fk_musica_playlist" Association="Self.fk_musica_playlist">
+      <End Role="musica" EntitySet="musica" />
+      <End Role="playlist" EntitySet="playlist" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuario_playlist" Association="Self.fk_usuario_playlist">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="playlist" EntitySet="playlist" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuario_seguir" Association="Self.fk_usuario_seguir">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="seguir" EntitySet="seguir" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

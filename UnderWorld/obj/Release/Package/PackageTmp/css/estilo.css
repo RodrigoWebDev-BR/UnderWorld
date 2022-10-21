@@ -1,0 +1,72 @@
+﻿
+body {   
+    background-color: #292929;
+    color: #f0fff0;
+}
+
+h1 {
+    font-family: 'Pena Caldaria', sans-serif;
+    color: #cd0000;
+}
+
+table th {
+    color: #ff9f43;
+}
+
+table td {
+    color: #f0fff0;
+    /*color: #8b2500;*/
+}
+
+table td:hover {
+    color: #8b2500;
+    cursor: pointer;
+}
+
+.btnAspx {
+    width: 150px;
+    height: 40px;
+    background-color: #ff9f43;
+    color: #341f97;
+    font-weight: 600;
+    border-radius: 5%;
+    padding: 0.2%;
+    margin: 1%;
+    border: hidden;
+}
+
+.t-modal .btnAspxDeletar {
+    width: 150px;
+    height: 40px;
+    background-color: #8b0000;
+    color: #808080;
+    font-weight: 600;
+    border-radius: 5%;
+    padding: 0.2%;
+    margin: 1%;
+    border: hidden;
+}
+
+.t-modal .modal-content {
+    background-color: #130c42;
+    color: #8dd5f3;
+    text-align: center;
+    border-radius: 3%;
+    border: hidden;
+    animation: animate__zoomIn;
+    animation-duration: 5s;
+}
+
+.t-modal .modal-header {
+    text-align: center;
+    color: #c80000;
+}
+
+.t-modal .modal-title {
+    text-align: center;
+}
+
+.t-modal .modal-footer {
+    display: flex;
+    align-content: space-around;
+}

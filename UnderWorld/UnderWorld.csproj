@@ -1,0 +1,349 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CAA7714-8168-4A12-A55A-75BAE74F35DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnderWorld</RootNamespace>
+    <AssemblyName>UnderWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44349</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\audio\01 - Critical Acclaim.mp3" />
+    <Content Include="assets\audio\01 - Laid To Rest.mp3" />
+    <Content Include="assets\audio\01 - On the Top.mp3" />
+    <Content Include="assets\audio\01 - Scream Aim Fire.mp3" />
+    <Content Include="assets\audio\01 - Shepherd Of Fire.mp3" />
+    <Content Include="assets\audio\01 Leap Of Faith.mp3" />
+    <Content Include="assets\audio\01. Walk With Me In Hell.mp3" />
+    <Content Include="assets\audio\02 - ...And Their Eulogies Sang Me To Sleep.mp3" />
+    <Content Include="assets\audio\02 - Burning Angel.mp3" />
+    <Content Include="assets\audio\02 - Hourglass.mp3" />
+    <Content Include="assets\audio\02 - Magnolia Blvd..mp3" />
+    <Content Include="assets\audio\02 - My Witness, Your Victim.mp3" />
+    <Content Include="assets\audio\02 - Yesterday Is Dead And Gone.mp3" />
+    <Content Include="assets\audio\02. Be Still And Know.mp3" />
+    <Content Include="assets\audio\03 - Aesthetics Of Hate.mp3" />
+    <Content Include="assets\audio\03 - C8h18 %28Gasoline%29.mp3" />
+    <Content Include="assets\audio\03 - Danse Macabre.mp3" />
+    <Content Include="assets\audio\03 - Judgement %28&amp; Punishment%29.mp3" />
+    <Content Include="assets\audio\03 - Predator &amp; Prayer.mp3" />
+    <Content Include="assets\audio\03 - Teacher, Teacher!.mp3" />
+    <Content Include="assets\audio\03 - Thank You, Pain.mp3" />
+    <Content Include="assets\audio\03 - The Last Fight.mp3" />
+    <Content Include="assets\audio\03 - Words Of Wisdom.mp3" />
+    <Content Include="assets\audio\03. Headspin.mp3" />
+    <Content Include="assets\audio\04 - Birds Elope With The Sun.mp3" />
+    <Content Include="assets\audio\04 - Buried Alive.mp3" />
+    <Content Include="assets\audio\04 - Cloud Factory.mp3" />
+    <Content Include="assets\audio\04 - Ravenous.mp3" />
+    <Content Include="assets\audio\04 - This Means War.mp3" />
+    <Content Include="assets\audio\04 - Under Black Flags We March.mp3" />
+    <Content Include="assets\audio\04 - Worthless.mp3" />
+    <Content Include="assets\audio\04 Not Dead Yet.mp3" />
+    <Content Include="assets\audio\04. 11th Hour.mp3" />
+    <Content Include="assets\audio\04. Hideaway.mp3" />
+    <Content Include="assets\audio\05 - Gunslinger.mp3" />
+    <Content Include="assets\audio\05 - No Gods, No Masters.mp3" />
+    <Content Include="assets\audio\05 - Omerta.mp3" />
+    <Content Include="assets\audio\05 - Panophobia.mp3" />
+    <Content Include="assets\audio\05 - The Eagle Flies Alone.mp3" />
+    <Content Include="assets\audio\05. Darkness within.mp3" />
+    <Content Include="assets\audio\06 - Blood Of The Scribe.mp3" />
+    <Content Include="assets\audio\06 - Business Suits And Combat Boots.mp3" />
+    <Content Include="assets\audio\06 - Halo.mp3" />
+    <Content Include="assets\audio\06 - Reason To Believe.mp3" />
+    <Content Include="assets\audio\06. Thrown Away.mp3" />
+    <Content Include="assets\audio\06. You Will Know My Name.mp3" />
+    <Content Include="assets\audio\07. Never Go Back.mp3" />
+    <Content Include="assets\audio\09 - A Little Piece Of Heaven.mp3" />
+    <Content Include="assets\audio\09 - Pisces.mp3" />
+    <Content Include="assets\audio\09 - The Poison.mp3" />
+    <Content Include="assets\audio\09. Time to Say Goodbye.mp3" />
+    <Content Include="assets\audio\10 - Beast And The Harlot.mp3" />
+    <Content Include="assets\audio\10. Dead Man Walking.mp3" />
+    <Content Include="assets\audio\10. Vigil.mp3" />
+    <Content Include="assets\audio\11 - A Gentle Disease.mp3" />
+    <Content Include="assets\audio\11 - Cries In Vain.mp3" />
+    <Content Include="assets\audio\11 - Revenge Of The Dadaists.mp3" />
+    <Content Include="assets\audio\12 - Road To Nowhere.mp3" />
+    <Content Include="assets\audio\12. Everlasting Sun.mp3" />
+    <Content Include="assets\audio\16 - Diva Satanica.mp3" />
+    <Content Include="assets\img\1200px-Lamb_of_God-0495.jpg" />
+    <Content Include="assets\img\128270.jpg" />
+    <Content Include="assets\img\164388.jpg" />
+    <Content Include="assets\img\18-183734_yugioh-bakura.png" />
+    <Content Include="assets\img\279-2799728_avenged-sevenfold-heavy-digital-magazine-avenged-sevenfold.png" />
+    <Content Include="assets\img\3199157664_3c4f74f210_o.jpg" />
+    <Content Include="assets\img\320-3206030_lamb-of-god-logo-logo-de-lamb-of.png" />
+    <Content Include="assets\img\46049.png" />
+    <Content Include="assets\img\500x500.jpg" />
+    <Content Include="assets\img\537695ba50a976ab953aff2c5536fa42.png" />
+    <Content Include="assets\img\5488_logo.jpg" />
+    <Content Include="assets\img\711PvCyzLxL._AC_SX425_.jpg" />
+    <Content Include="assets\img\716LCQz88GL._AC_SX425_.jpg" />
+    <Content Include="assets\img\71VBQ4V2DXL.jpg" />
+    <Content Include="assets\img\81B7nK2XzoL._SX522_.jpg" />
+    <Content Include="assets\img\81D5il1PpPL._AC_SL1425_.jpg" />
+    <Content Include="assets\img\81IZKOo5qeL._AC_SX355_.jpg" />
+    <Content Include="assets\img\919pndV8xcL._AC_SL1200_.jpg" />
+    <Content Include="assets\img\A-252323-1443623255-6795.jpeg.jpg" />
+    <Content Include="assets\img\A-923583-1531341017-7713.jpeg.jpg" />
+    <Content Include="assets\img\ab67616d0000b273465c72e3ec30d507da459c7e.jpg" />
+    <Content Include="assets\img\ab67616d0000b273987a96b77769374ab3d65c17.jpg" />
+    <Content Include="assets\img\ab67616d0000b273e458b13342bbe52aef3079ed.jpg" />
+    <Content Include="assets\img\agonist-the-52e1b323ae87b.png" />
+    <Content Include="assets\img\arch-enemy-war-eternal-cd.jpg" />
+    <Content Include="assets\img\arch_enemy_logo.png" />
+    <Content Include="assets\img\Avenged-Sevenfold-Logo.jpg" />
+    <Content Include="assets\img\bfb56f9a4ffb0bcc26d5a1c302cafedc.png" />
+    <Content Include="assets\img\bullet-for-my-valentine-logos-bullet-for-my-valentine-logos-700_303.png" />
+    <Content Include="assets\img\bullet-for-my-valentine-wallpaper-preview.jpg" />
+    <Content Include="assets\img\butcherbabiestakecd.jpg" />
+    <Content Include="assets\img\Butcher_Babies_Logo.png" />
+    <Content Include="assets\img\City_of_Evil_album_cover.jpg" />
+    <Content Include="assets\img\Cover_of_Will_to_Power_by_Arch_Enemy.jpg" />
+    <Content Include="assets\img\D_NQ_NP_609221-MLB20727117575_052016-O.jpg" />
+    <Content Include="assets\img\D_NQ_NP_685942-MLB27116821934_042018-O.jpg" />
+    <Content Include="assets\img\eye-of-providence.jpg" />
+    <Content Include="assets\img\f79qv4dc.j31.jpg" />
+    <Content Include="assets\img\gravity.jpg" />
+    <Content Include="assets\img\Grhhhrhry.jpg" />
+    <Content Include="assets\img\jinjer_band_logo_weiss_auf_transparent_web-f0fd8ce6.png" />
+    <Content Include="assets\img\machineheadmain.png" />
+    <Content Include="assets\img\Machine_Head_-_The_Blackening.jpg" />
+    <Content Include="assets\img\produto_Foto1_9265128.jpg" />
+    <Content Include="assets\img\R-13061949-1570922218-2409.jpeg.jpg" />
+    <Content Include="assets\img\R-4855116-1378458785-2067.jpg" />
+    <Content Include="assets\img\resurrection_fest_2018_jinger1-960x520.jpg" />
+    <Content Include="assets\img\s-l640.jpg" />
+    <Content Include="assets\img\scream_aim_fire.jpg" />
+    <Content Include="assets\img\the_poison.jpg" />
+    <Content Include="assets\img\unnamed.jpg" />
+    <Content Include="assets\img\unnamed.png" />
+    <Content Include="cad_album.aspx" />
+    <Content Include="cad_artista.aspx" />
+    <Content Include="cad_musica.aspx" />
+    <Content Include="cad_usuario.aspx" />
+    <Content Include="Dados.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Dados.edmx</DependentUpon>
+      <LastGenOutput>Dados.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Dados.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Dados.edmx</DependentUpon>
+      <LastGenOutput>Dados.cs</LastGenOutput>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="album.cs">
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+    <Compile Include="artista.cs">
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cad_album.aspx.cs">
+      <DependentUpon>cad_album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cad_album.aspx.designer.cs">
+      <DependentUpon>cad_album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cad_artista.aspx.cs">
+      <DependentUpon>cad_artista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cad_artista.aspx.designer.cs">
+      <DependentUpon>cad_artista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cad_musica.aspx.cs">
+      <DependentUpon>cad_musica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cad_musica.aspx.designer.cs">
+      <DependentUpon>cad_musica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cad_usuario.aspx.cs">
+      <DependentUpon>cad_usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cad_usuario.aspx.designer.cs">
+      <DependentUpon>cad_usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dados.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dados.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dados.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="musica.cs">
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+    <Compile Include="playlist.cs">
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="relacionado.cs">
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+    <Compile Include="seguir.cs">
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.cs">
+      <DependentUpon>Dados.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Dados.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Dados.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Dados.edmx.diagram">
+      <DependentUpon>Dados.edmx</DependentUpon>
+    </Content>
+    <Content Include="css\estilo.css" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="js\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50411</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44349/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

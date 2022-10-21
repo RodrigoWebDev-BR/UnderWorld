@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyx/pzJlo8E6JM6PsXo+4JgAAAAACAAAAAAAQZgAAAAEAACAAAADzN9S0FwB6fLdfM06vMyr+PL9BHFB9P3m2evOb/aYb8wAAAAAOgAAAAAIAACAAAAC40aTe9kQXuqfARMocgve+22jByuocjiGYuKLWnUD7ESAAAABa/HbuJYfyv+g/HEqBgS0KAwISLBH+xx9bDCXiRnQg90AAAADgZJC5zSMwK6dut0MyPLC5oWzao6BIYc8FyddaYQa3vzQBg0qzN6eMF9poqvIT+d7bN+wKtoC29MBQ9XiyDeia</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.site4now.net/underworld</_PublishTargetUrl>
+    <History>False|2021-09-24T01:46:09.2187858Z;False|2021-09-23T22:24:32.7871719-03:00;True|2021-09-23T21:53:53.6543928-03:00;True|2021-09-23T20:26:00.6570098-03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/audio/01 - Critical Acclaim.mp3">
+      <publishTime>09/12/2021 18:04:21</publishTime>
+    </File>
+    <File Include="assets/audio/01 - Laid To Rest.mp3">
+      <publishTime>09/10/2021 09:21:35</publishTime>
+    </File>
+    <File Include="assets/audio/01 - On the Top.mp3">
+      <publishTime>09/10/2021 09:23:52</publishTime>
+    </File>
+    <File Include="assets/audio/01 - Scream Aim Fire.mp3">
+      <publishTime>09/12/2021 18:01:23</publishTime>
+    </File>
+    <File Include="assets/audio/01 - Shepherd Of Fire.mp3">
+      <publishTime>09/12/2021 18:06:36</publishTime>
+    </File>
+    <File Include="assets/audio/01 Leap Of Faith.mp3">
+      <publishTime>09/12/2021 18:02:34</publishTime>
+    </File>
+    <File Include="assets/audio/01. Walk With Me In Hell.mp3">
+      <publishTime>09/10/2021 09:22:44</publishTime>
+    </File>
+    <File Include="assets/audio/02 - ...And Their Eulogies Sang Me To Sleep.mp3">
+      <publishTime>09/10/2021 19:29:20</publishTime>
+    </File>
+    <File Include="assets/audio/02 - Burning Angel.mp3">
+      <publishTime>09/12/2021 00:40:53</publishTime>
+    </File>
+    <File Include="assets/audio/02 - Hourglass.mp3">
+      <publishTime>09/10/2021 09:21:47</publishTime>
+    </File>
+    <File Include="assets/audio/02 - Magnolia Blvd..mp3">
+      <publishTime>09/10/2021 09:24:29</publishTime>
+    </File>
+    <File Include="assets/audio/02 - My Witness, Your Victim.mp3">
+      <publishTime>09/12/2021 12:14:24</publishTime>
+    </File>
+    <File Include="assets/audio/02 - Yesterday Is Dead And Gone.mp3">
+      <publishTime>09/12/2021 13:38:37</publishTime>
+    </File>
+    <File Include="assets/audio/02. Be Still And Know.mp3">
+      <publishTime>09/12/2021 17:58:55</publishTime>
+    </File>
+    <File Include="assets/audio/03 - Aesthetics Of Hate.mp3">
+      <publishTime>09/12/2021 17:55:26</publishTime>
+    </File>
+    <File Include="assets/audio/03 - C8h18 %28Gasoline%29.mp3">
+      <publishTime>09/10/2021 09:24:41</publishTime>
+    </File>
+    <File Include="assets/audio/03 - Danse Macabre.mp3">
+      <publishTime>09/12/2021 12:14:44</publishTime>
+    </File>
+    <File Include="assets/audio/03 - Judgement %28&amp; Punishment%29.mp3">
+      <publishTime>09/10/2021 09:06:16</publishTime>
+    </File>
+    <File Include="assets/audio/03 - Predator &amp; Prayer.mp3">
+      <publishTime>09/12/2021 12:12:50</publishTime>
+    </File>
+    <File Include="assets/audio/03 - Teacher, Teacher!.mp3">
+      <publishTime>09/10/2021 09:24:08</publishTime>
+    </File>
+    <File Include="assets/audio/03 - Thank You, Pain.mp3">
+      <publishTime>09/12/2021 12:12:24</publishTime>
+    </File>
+    <File Include="assets/audio/03 - The Last Fight.mp3">
+      <publishTime>09/12/2021 18:03:39</publishTime>
+    </File>
+    <File Include="assets/audio/03 - Words Of Wisdom.mp3">
+      <publishTime>09/10/2021 09:23:22</publishTime>
+    </File>
+    <File Include="assets/audio/03. Headspin.mp3">
+      <publishTime>09/10/2021 09:25:47</publishTime>
+    </File>
+    <File Include="assets/audio/04 - Birds Elope With The Sun.mp3">
+      <publishTime>09/12/2021 12:13:13</publishTime>
+    </File>
+    <File Include="assets/audio/04 - Buried Alive.mp3">
+      <publishTime>09/12/2021 18:06:16</publishTime>
+    </File>
+    <File Include="assets/audio/04 - Cloud Factory.mp3">
+      <publishTime>09/10/2021 09:23:03</publishTime>
+    </File>
+    <File Include="assets/audio/04 - Ravenous.mp3">
+      <publishTime>09/12/2021 00:37:40</publishTime>
+    </File>
+    <File Include="assets/audio/04 - This Means War.mp3">
+      <publishTime>09/12/2021 18:06:54</publishTime>
+    </File>
+    <File Include="assets/audio/04 - Under Black Flags We March.mp3">
+      <publishTime>09/12/2021 13:38:51</publishTime>
+    </File>
+    <File Include="assets/audio/04 - Worthless.mp3">
+      <publishTime>09/12/2021 18:03:58</publishTime>
+    </File>
+    <File Include="assets/audio/04 Not Dead Yet.mp3">
+      <publishTime>09/12/2021 18:02:15</publishTime>
+    </File>
+    <File Include="assets/audio/04. 11th Hour.mp3">
+      <publishTime>09/10/2021 09:22:20</publishTime>
+    </File>
+    <File Include="assets/audio/04. Hideaway.mp3">
+      <publishTime>09/12/2021 17:54:47</publishTime>
+    </File>
+    <File Include="assets/audio/05 - Gunslinger.mp3">
+      <publishTime>09/12/2021 18:04:34</publishTime>
+    </File>
+    <File Include="assets/audio/05 - No Gods, No Masters.mp3">
+      <publishTime>09/12/2021 13:39:04</publishTime>
+    </File>
+    <File Include="assets/audio/05 - Omerta.mp3">
+      <publishTime>09/10/2021 09:21:56</publishTime>
+    </File>
+    <File Include="assets/audio/05 - Panophobia.mp3">
+      <publishTime>09/12/2021 12:13:30</publishTime>
+    </File>
+    <File Include="assets/audio/05 - The Eagle Flies Alone.mp3">
+      <publishTime>09/12/2021 13:40:42</publishTime>
+    </File>
+    <File Include="assets/audio/05. Darkness within.mp3">
+      <publishTime>09/12/2021 17:59:18</publishTime>
+    </File>
+    <File Include="assets/audio/06 - Blood Of The Scribe.mp3">
+      <publishTime>09/10/2021 09:22:06</publishTime>
+    </File>
+    <File Include="assets/audio/06 - Business Suits And Combat Boots.mp3">
+      <publishTime>09/10/2021 09:26:12</publishTime>
+    </File>
+    <File Include="assets/audio/06 - Halo.mp3">
+      <publishTime>09/12/2021 17:58:33</publishTime>
+    </File>
+    <File Include="assets/audio/06 - Reason To Believe.mp3">
+      <publishTime>09/12/2021 13:41:40</publishTime>
+    </File>
+    <File Include="assets/audio/06. Thrown Away.mp3">
+      <publishTime>09/10/2021 09:25:05</publishTime>
+    </File>
+    <File Include="assets/audio/06. You Will Know My Name.mp3">
+      <publishTime>09/12/2021 13:40:22</publishTime>
+    </File>
+    <File Include="assets/audio/07. Never Go Back.mp3">
+      <publishTime>09/10/2021 09:25:18</publishTime>
+    </File>
+    <File Include="assets/audio/09 - A Little Piece Of Heaven.mp3">
+      <publishTime>09/12/2021 18:04:52</publishTime>
+    </File>
+    <File Include="assets/audio/09 - Pisces.mp3">
+      <publishTime>09/10/2021 09:23:36</publishTime>
+    </File>
+    <File Include="assets/audio/09 - The Poison.mp3">
+      <publishTime>09/12/2021 18:00:12</publishTime>
+    </File>
+    <File Include="assets/audio/09. Time to Say Goodbye.mp3">
+      <publishTime>09/12/2021 17:54:28</publishTime>
+    </File>
+    <File Include="assets/audio/10 - Beast And The Harlot.mp3">
+      <publishTime>09/12/2021 17:53:42</publishTime>
+    </File>
+    <File Include="assets/audio/10. Dead Man Walking.mp3">
+      <publishTime>09/10/2021 09:25:31</publishTime>
+    </File>
+    <File Include="assets/audio/10. Vigil.mp3">
+      <publishTime>09/10/2021 09:22:29</publishTime>
+    </File>
+    <File Include="assets/audio/11 - A Gentle Disease.mp3">
+      <publishTime>09/12/2021 12:17:01</publishTime>
+    </File>
+    <File Include="assets/audio/11 - Cries In Vain.mp3">
+      <publishTime>09/12/2021 18:00:30</publishTime>
+    </File>
+    <File Include="assets/audio/11 - Revenge Of The Dadaists.mp3">
+      <publishTime>09/12/2021 12:13:52</publishTime>
+    </File>
+    <File Include="assets/audio/12 - Road To Nowhere.mp3">
+      <publishTime>09/12/2021 18:01:50</publishTime>
+    </File>
+    <File Include="assets/audio/12. Everlasting Sun.mp3">
+      <publishTime>09/12/2021 17:54:12</publishTime>
+    </File>
+    <File Include="assets/audio/16 - Diva Satanica.mp3">
+      <publishTime>09/12/2021 13:38:05</publishTime>
+    </File>
+    <File Include="assets/img/1200px-Lamb_of_God-0495.jpg">
+      <publishTime>09/14/2021 09:31:20</publishTime>
+    </File>
+    <File Include="assets/img/128270.jpg">
+      <publishTime>09/10/2021 20:02:07</publishTime>
+    </File>
+    <File Include="assets/img/164388.jpg">
+      <publishTime>09/10/2021 20:00:08</publishTime>
+    </File>
+    <File Include="assets/img/18-183734_yugioh-bakura.png">
+      <publishTime>09/10/2021 20:03:04</publishTime>
+    </File>
+    <File Include="assets/img/279-2799728_avenged-sevenfold-heavy-digital-magazine-avenged-sevenfold.png">
+      <publishTime>09/14/2021 12:19:59</publishTime>
+    </File>
+    <File Include="assets/img/3199157664_3c4f74f210_o.jpg">
+      <publishTime>09/13/2021 23:18:26</publishTime>
+    </File>
+    <File Include="assets/img/320-3206030_lamb-of-god-logo-logo-de-lamb-of.png">
+      <publishTime>09/14/2021 12:20:26</publishTime>
+    </File>
+    <File Include="assets/img/46049.png">
+      <publishTime>09/14/2021 12:19:30</publishTime>
+    </File>
+    <File Include="assets/img/500x500.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="assets/img/537695ba50a976ab953aff2c5536fa42.png">
+      <publishTime>09/14/2021 15:21:56</publishTime>
+    </File>
+    <File Include="assets/img/5488_logo.jpg">
+      <publishTime>09/14/2021 10:21:43</publishTime>
+    </File>
+    <File Include="assets/img/711PvCyzLxL._AC_SX425_.jpg">
+      <publishTime>09/13/2021 21:24:28</publishTime>
+    </File>
+    <File Include="assets/img/716LCQz88GL._AC_SX425_.jpg">
+      <publishTime>09/13/2021 22:54:09</publishTime>
+    </File>
+    <File Include="assets/img/71VBQ4V2DXL.jpg">
+      <publishTime>09/13/2021 22:50:28</publishTime>
+    </File>
+    <File Include="assets/img/81B7nK2XzoL._SX522_.jpg">
+      <publishTime>09/13/2021 22:57:31</publishTime>
+    </File>
+    <File Include="assets/img/81D5il1PpPL._AC_SL1425_.jpg">
+      <publishTime>09/13/2021 23:25:23</publishTime>
+    </File>
+    <File Include="assets/img/81IZKOo5qeL._AC_SX355_.jpg">
+      <publishTime>09/13/2021 22:53:22</publishTime>
+    </File>
+    <File Include="assets/img/919pndV8xcL._AC_SL1200_.jpg">
+      <publishTime>09/13/2021 21:23:46</publishTime>
+    </File>
+    <File Include="assets/img/A-252323-1443623255-6795.jpeg.jpg">
+      <publishTime>09/14/2021 09:34:26</publishTime>
+    </File>
+    <File Include="assets/img/A-923583-1531341017-7713.jpeg.jpg">
+      <publishTime>09/14/2021 09:34:45</publishTime>
+    </File>
+    <File Include="assets/img/ab67616d0000b273465c72e3ec30d507da459c7e.jpg">
+      <publishTime>09/13/2021 21:21:16</publishTime>
+    </File>
+    <File Include="assets/img/ab67616d0000b273987a96b77769374ab3d65c17.jpg">
+      <publishTime>09/13/2021 21:25:41</publishTime>
+    </File>
+    <File Include="assets/img/ab67616d0000b273e458b13342bbe52aef3079ed.jpg">
+      <publishTime>09/13/2021 23:19:42</publishTime>
+    </File>
+    <File Include="assets/img/agonist-the-52e1b323ae87b.png">
+      <publishTime>09/14/2021 15:15:56</publishTime>
+    </File>
+    <File Include="assets/img/arch-enemy-war-eternal-cd.jpg">
+      <publishTime>09/13/2021 22:55:14</publishTime>
+    </File>
+    <File Include="assets/img/arch_enemy_logo.png">
+      <publishTime>09/14/2021 15:19:05</publishTime>
+    </File>
+    <File Include="assets/img/Avenged-Sevenfold-Logo.jpg">
+      <publishTime>09/14/2021 10:20:59</publishTime>
+    </File>
+    <File Include="assets/img/bfb56f9a4ffb0bcc26d5a1c302cafedc.png">
+      <publishTime>09/14/2021 15:30:21</publishTime>
+    </File>
+    <File Include="assets/img/bullet-for-my-valentine-logos-bullet-for-my-valentine-logos-700_303.png">
+      <publishTime>09/14/2021 12:19:43</publishTime>
+    </File>
+    <File Include="assets/img/bullet-for-my-valentine-wallpaper-preview.jpg">
+      <publishTime>09/14/2021 10:19:20</publishTime>
+    </File>
+    <File Include="assets/img/butcherbabiestakecd.jpg">
+      <publishTime>09/13/2021 22:57:56</publishTime>
+    </File>
+    <File Include="assets/img/Butcher_Babies_Logo.png">
+      <publishTime>09/14/2021 10:18:52</publishTime>
+    </File>
+    <File Include="assets/img/City_of_Evil_album_cover.jpg">
+      <publishTime>09/13/2021 23:24:47</publishTime>
+    </File>
+    <File Include="assets/img/Cover_of_Will_to_Power_by_Arch_Enemy.jpg">
+      <publishTime>09/13/2021 22:55:47</publishTime>
+    </File>
+    <File Include="assets/img/D_NQ_NP_609221-MLB20727117575_052016-O.jpg">
+      <publishTime>09/13/2021 23:25:45</publishTime>
+    </File>
+    <File Include="assets/img/D_NQ_NP_685942-MLB27116821934_042018-O.jpg">
+      <publishTime>09/13/2021 22:56:14</publishTime>
+    </File>
+    <File Include="assets/img/eye-of-providence.jpg">
+      <publishTime>09/13/2021 23:19:57</publishTime>
+    </File>
+    <File Include="assets/img/f79qv4dc.j31.jpg">
+      <publishTime>09/13/2021 22:50:02</publishTime>
+    </File>
+    <File Include="assets/img/gravity.jpg">
+      <publishTime>09/13/2021 21:27:54</publishTime>
+    </File>
+    <File Include="assets/img/Grhhhrhry.jpg">
+      <publishTime>09/13/2021 23:25:06</publishTime>
+    </File>
+    <File Include="assets/img/jinjer_band_logo_weiss_auf_transparent_web-f0fd8ce6.png">
+      <publishTime>09/14/2021 12:20:45</publishTime>
+    </File>
+    <File Include="assets/img/machineheadmain.png">
+      <publishTime>09/14/2021 10:21:28</publishTime>
+    </File>
+    <File Include="assets/img/Machine_Head_-_The_Blackening.jpg">
+      <publishTime>09/13/2021 22:52:33</publishTime>
+    </File>
+    <File Include="assets/img/produto_Foto1_9265128.jpg">
+      <publishTime>09/13/2021 23:21:22</publishTime>
+    </File>
+    <File Include="assets/img/R-13061949-1570922218-2409.jpeg.jpg">
+      <publishTime>09/13/2021 21:25:20</publishTime>
+    </File>
+    <File Include="assets/img/R-4855116-1378458785-2067.jpg">
+      <publishTime>09/13/2021 22:52:01</publishTime>
+    </File>
+    <File Include="assets/img/resurrection_fest_2018_jinger1-960x520.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="assets/img/s-l640.jpg">
+      <publishTime>09/13/2021 22:58:23</publishTime>
+    </File>
+    <File Include="assets/img/scream_aim_fire.jpg">
+      <publishTime>09/13/2021 21:26:58</publishTime>
+    </File>
+    <File Include="assets/img/the_poison.jpg">
+      <publishTime>09/13/2021 21:26:31</publishTime>
+    </File>
+    <File Include="assets/img/unnamed.jpg">
+      <publishTime>09/13/2021 21:25:01</publishTime>
+    </File>
+    <File Include="assets/img/unnamed.png">
+      <publishTime>09/14/2021 12:21:02</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 14:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 14:15:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/09/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/12/2017 10:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/12/2017 10:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>05/11/2016 19:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/11/2016 19:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/11/2016 19:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>05/11/2016 19:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/11/2016 19:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/11/2016 19:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>05/11/2016 19:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/11/2016 19:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>05/11/2016 19:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/11/2016 19:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/11/2016 19:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>05/11/2016 19:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>05/11/2016 19:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>05/11/2016 19:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/11/2016 19:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/11/2016 19:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/11/2016 19:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/11/2016 19:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/11/2016 19:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>05/11/2016 19:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/11/2016 19:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/11/2016 19:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/11/2016 19:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/11/2016 19:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/11/2016 19:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/UnderWorld.dll">
+      <publishTime>09/23/2021 22:02:22</publishTime>
+    </File>
+    <File Include="bin/UnderWorld.pdb">
+      <publishTime>09/23/2021 22:02:22</publishTime>
+    </File>
+    <File Include="cad_album.aspx">
+      <publishTime>09/15/2021 15:47:59</publishTime>
+    </File>
+    <File Include="cad_artista.aspx">
+      <publishTime>09/15/2021 15:27:44</publishTime>
+    </File>
+    <File Include="cad_musica.aspx">
+      <publishTime>09/15/2021 15:27:44</publishTime>
+    </File>
+    <File Include="cad_usuario.aspx">
+      <publishTime>09/15/2021 15:27:22</publishTime>
+    </File>
+    <File Include="css/estilo.css">
+      <publishTime>09/15/2021 12:05:41</publishTime>
+    </File>
+    <File Include="Dados.edmx.diagram">
+      <publishTime>08/09/2021 11:43:01</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/25/2021 20:29:25</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>09/15/2021 15:14:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/23/2021 21:52:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
